@@ -25,7 +25,9 @@ app.use('/en/houses', housesRoute);
 app.use('/en/spells', spellsRoute)
 
 
-
+app.get('*', () => {
+    res.status(404).send('Route not found!')
+})
 
 
 const PORT = process.env.PORT
