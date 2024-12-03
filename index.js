@@ -25,7 +25,7 @@ app.use('/en/houses', housesRoute);
 app.use('/en/spells', spellsRoute)
 
 
-app.get('*', () => {
+app.get('*', (req, res) => {
     res.status(404).send('Route not found!')
 })
 
