@@ -11,7 +11,7 @@ dotenv.config();
 
 
 app.get('/', (req, res) => {
-    res.status(200).send('Server is Running!')
+    res.status(200).send("Usama's server is Running!.Please enter /en the base URL")
 })
 
 app.get('/en', (req, res) => {
